@@ -8,7 +8,7 @@ COPY . .
 WORKDIR "/src/hello-world-api"
 RUN dotnet publish "hello-world-api.csproj" -c Release -o /app
 
-FROM mcr.microsoft.com/dotnet/aspnet:2.1 AS base
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS base
 WORKDIR /app
 
 ENV ASPNETCORE_URLS=http://0.0.0.0:5000
