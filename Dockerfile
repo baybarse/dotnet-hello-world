@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:2.1 AS build
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
 COPY ["hello-world-api/hello-world-api.csproj", "hello-world-api/"]
